@@ -96,6 +96,7 @@ bool dequeue(Queue& q, int& nomor) {
      }
      
      Node *hapus = q.depan;
+     nomor = hapus->data;
      q.depan = hapus->next;
 
      if(q.depan == nullptr){
